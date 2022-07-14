@@ -126,3 +126,19 @@ li button {
     background-color: transparent;
     cursor: pointer;
 }
+
+@keyframes append-animate {
+    from {
+		transform: scaleY(0);
+		opacity: 0;
+	}
+	to {
+		transform: scaleY(1);
+		opacity: 1;
+	}
+}
+
+.new-list-item {
+    transform-origin: 50% 0;
+	animation: append-animate .3s ease-in-out;
+}
