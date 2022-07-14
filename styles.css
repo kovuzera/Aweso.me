@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --brand-purple: rgba(97, 0, 255, 1);
+    --brand-purple-light: rgba(97, 0, 255, .03);
+    --text: #1C1C1C;
+}
+
+html {
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+p, li {
+    font-size: 1.6rem;
+    color: var(--text);
+}
+
+h1 {
+    font-size: 4.8rem;
+    color: var(--text);
+}
+
+body.darkmode {
+    --text: #f2f2f2;
+    --brand-purple-light: rgba(97, 0, 255, .2);
+
+    background-color: #1F1F1F;
+}
+
+body {
+    background-color: #f5f5f5;
+    transition: .2s;
+}
+
+
+header {
+    padding: 5rem;
+    background-color: var(--brand-purple-light);
+    display: flex;
+    height: 30rem;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 0 0 9rem 9rem;
+    border: 1px solid var(--brand-purple);
+    border-top: 0;
+}
+
+header button {
+    position: absolute;
+    right: 20%;
+    top: 3%;
+    background-color: rgba(162, 0, 255, .1);
+    border: none;
+    padding: 1rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: .2s;
+    color: rgba(162, 0, 255, .5);
+}
+
+header button:hover {
+    transition: .2s;
+    color: rgba(162, 0, 255, .7);
+    background-color: rgba(162, 0, 255, .3);
+}
+
+.header-description {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.wrapper {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-achievement {
+    height: fit-content;
+    padding: 1.5rem 3rem;
+    font-size: 2rem;
+    background-color: var(--brand-purple);
+    color: white;
+    border: 2px solid transparent;
+    cursor: pointer;
+    border-radius: 1rem;
+    margin-bottom: 3.4rem;
+}
+
+.list-area {
+    margin-top: 3.4rem;
+}
+
+ul {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+li {
+    background-color: var(--brand-purple-light);
+    padding: 1rem;
+    border: 1px solid var(--brand-purple);
+    border-radius: 1rem;
+    padding-inline: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}

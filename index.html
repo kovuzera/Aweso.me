@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Aweso.me</title>
+  </head>
+  <body>
+    <header class="wrapper">
+      <div class="header-description">
+        <button onclick="toggleDarkMode()">Modo escuro / Modo claro</button>
+        <h1>Aweso.me</h1>
+        <p>
+          Liste pequenas conquistas para lembrar a si mesmo de que você é
+          incrível!
+        </p>
+      </div>
+    </header>
+    <div class="wrapper list-area">
+      <button class="add-achievement" onclick="newAchievementPrompt()">
+        + Adicionar conquista ❤️
+      </button>
+
+      <ul id="achievements-list">
+      </ul>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
